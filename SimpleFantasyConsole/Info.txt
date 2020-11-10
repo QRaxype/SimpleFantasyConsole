@@ -1,0 +1,8 @@
+Ram - ?
+Display - 240x136 like Tic-80
+Pallete 16 colors
+
+Lua Main functions:
+Init()
+Tick(dt)
+

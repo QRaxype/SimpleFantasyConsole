@@ -1,0 +1,1 @@
+.\Debug\SimpleFantasyConsole.exe .\script.lua

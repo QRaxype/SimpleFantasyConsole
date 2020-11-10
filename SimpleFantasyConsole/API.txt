@@ -1,0 +1,5 @@
+exit() - exit
+print() - print to console
+pix(x, y, [c]) - draw pixel
+cls(c) - clear screen
+key(k) : bool - return true if key is pressed
