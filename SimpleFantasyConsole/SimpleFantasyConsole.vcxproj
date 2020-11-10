@@ -146,7 +146,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CApi.h" />
-    <ClInclude Include="Color.h" />
     <ClInclude Include="Config.h" />
     <ClInclude Include="Global.h" />
     <ClInclude Include="Include.h" />
@@ -155,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="API.txt" />
+    <Text Include="Changelog.txt" />
     <Text Include="Info.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

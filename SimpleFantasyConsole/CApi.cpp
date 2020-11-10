@@ -29,7 +29,6 @@ void CApiExit(byte reason){
 	if(!G->err_msg.empty()){
 		printf("Add. error message: %s", G->err_msg.c_str());
 	}
-	//CApiDeinit();
 	G->error = reason;
 }
 
@@ -73,4 +72,14 @@ void capi_cls(byte _override, ui8 c){
 bool capi_key(byte _override, short key){
 	bool b = sf::Keyboard::isKeyPressed((sf::Keyboard::Key)key);
 	return b;
+}
+ui32 capi_pal(byte _override, ui8 idx, ui32 color){
+	Global *G = Global::G;
+	if(_override == 1){
+		return G->palette[idx%PALETTE_SIZE].toInteger();
+	}
+	if(idx < PALETTE_SIZE){
+		G->palette[idx] = sf::Color(color);
+	}
+	return 0;
 }

@@ -3,7 +3,7 @@
 #include "Global.h"
 
 void print_version();
-
+//Main Loop
 int main(int argc, const char **argv){
 	print_version();
 	Global::G = new Global();
@@ -43,6 +43,8 @@ void print_version(){
 			strcpy(state, "None");
 			break;
 	}
-	printf("Version: (%u.%u.%u) [%u] {%s}\n\n", _version.ver.major, _version.ver.minor, _version.ver.macro,
+	/*printf("Version: (%u.%u.%u) [%u] {%s}\n\n", _version.ver.major, _version.ver.minor, _version.ver.macro,
+		   _version.alt, state);*/
+	printf("Version: %u.%u.%u-%u-%s\n\n", _version.ver.major, _version.ver.minor, _version.ver.macro,
 		   _version.alt, state);
 }

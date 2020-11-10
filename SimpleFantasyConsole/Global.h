@@ -1,6 +1,5 @@
 #pragma once
 #include "Include.h"
-#include "Color.h"
 
 using std::string;
 
@@ -14,8 +13,12 @@ struct Global{
 	string err_msg;
 
 	sf::RenderWindow win;
-	sf::Color palette[16] = {{0,0,0}, {255,255,255},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},
-	{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0},{0,0,0}};
+	sf::Color palette[16] = {
+		{0,0,0},{255,255,255},sf::Color::Red,sf::Color::Yellow,
+		sf::Color::Green,sf::Color::Cyan,sf::Color::Blue,sf::Color::Magenta,
+		{0,0,0},{0,0,0},{0,0,0},{0,0,0},
+		{0,0,0},{0,0,0},{0,0,0},{0,0,0}
+	};
 	sf::Texture win_texture; sf::Sprite win_sprite;
 
 	sf::Image screen;

@@ -21,7 +21,7 @@ const unsigned short int DISPLAY_RESOLUTION[2] = {240, 136};
 //console pixel scale factory by compute pixel
 const unsigned short int PIXELS_IN_PIXEL = 2;
 const unsigned int MAX_CODE_KB = 8;
-/*const unsigned short int PALETTE_SIZE = 16;*/
+const unsigned short int PALETTE_SIZE = 16;
 
 //Script
 

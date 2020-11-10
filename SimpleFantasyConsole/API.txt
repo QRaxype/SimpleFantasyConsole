@@ -1,5 +1,10 @@
+first launch:
 exit() - exit
 print() - print to console
-pix(x, y, [c]) - draw pixel
+pix(x, y, [c]) : [c] - draw pixel
 cls(c) - clear screen
 key(k) : bool - return true if key is pressed
+
+0.2:
+pal(idx, [c]) : [c] - set color to palette or return color from palette
+

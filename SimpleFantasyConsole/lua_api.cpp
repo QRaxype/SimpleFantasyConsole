@@ -73,6 +73,17 @@ int luaapi_key(lua_State *lua){
 	}
 	return 0;
 }
+int luaapi_pal(lua_State *lua){
+	if(lua_gettop(lua) >= 2){
+		capi_pal(0, lua_tointeger(lua, 1), lua_tointeger(lua, 2));
+		return 0;
+	}
+	else if(lua_gettop(lua) == 1){
+		lua_pushinteger(lua, capi_pal(1, lua_tointeger(lua, 1), 0));
+		return 1;
+	}
+	return 0;
+}
 
 void luaApiInit(){
 	Global *G = Global::G;
