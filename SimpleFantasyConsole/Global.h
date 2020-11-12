@@ -20,11 +20,13 @@ struct Global{
 		{0,0,0},{0,0,0},{0,0,0},{0,0,0}
 	};
 	sf::Texture win_texture; sf::Sprite win_sprite;
-
 	sf::Image screen;
+	sf::SoundBuffer sound_buffer;
+
 	lua_State *lua;
 
 	string code;
+	ui32 clockoffset;
 
 	Global(){};
 	//Global(const Global &){};

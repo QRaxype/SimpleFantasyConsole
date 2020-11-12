@@ -355,7 +355,9 @@ MigrationBackup/
 
 #PRIVATE
 Future.fut
-
+SimpleFantasyConsole/CartFormat.txt
+SimpleFantasyConsole/Changelog.txt
+SimpleFantasyConsole/Info.txt
 
 #REMOVED
 SimpleFantasyConsole/Color.h

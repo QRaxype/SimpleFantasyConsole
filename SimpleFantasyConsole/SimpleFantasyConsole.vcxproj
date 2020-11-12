@@ -154,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <Text Include="API.txt" />
+    <Text Include="CartFormat.txt" />
     <Text Include="Changelog.txt" />
     <Text Include="Info.txt" />
   </ItemGroup>

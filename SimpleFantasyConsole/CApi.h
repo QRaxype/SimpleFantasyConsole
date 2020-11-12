@@ -9,9 +9,11 @@ static const int ___API_LIST_LINE_START = __LINE__ + 2;
 macro(exit, void, 0) \
 macro(print, void, 1, const char *text) \
 macro(pix, ui8, 3, int x, int y, ui8) \
-macro(cls, void, 1, ui8) \
+macro(cls, void, 1, ui8 c) \
 macro(key, bool, 1, short int key) \
-macro(pal, ui32, 2, ui8 idx, ui32 c)
+macro(pal, ui32, 2, ui8 idx, ui32 c) \
+macro(sfx, void, 1, ui8 a) \
+macro(clock, ui32, 0)
 
 static const int ___API_LIST_LINE_END = __LINE__ - 2;
 const unsigned int API_COUNT = ___API_LIST_LINE_END - ___API_LIST_LINE_START + 1;

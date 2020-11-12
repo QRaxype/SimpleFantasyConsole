@@ -33,8 +33,8 @@ void init(){
 	}
 
 	G->work = true;
-	G->win.create(sf::VideoMode(DISPLAY_RESOLUTION[0] * PIXELS_IN_PIXEL, DISPLAY_RESOLUTION[1] * PIXELS_IN_PIXEL),
-				  "SimpleFantasyConsole", 5);
+	G->win.create(sf::VideoMode(DISPLAY_RESOLUTION[0] * PIXELS_IN_PIXEL,
+		DISPLAY_RESOLUTION[1] * PIXELS_IN_PIXEL), "SimpleFantasyConsole", 5);
 	G->win.setFramerateLimit(120);
 	G->screen.create(DISPLAY_RESOLUTION[0], DISPLAY_RESOLUTION[1]);
 	G->win_texture.loadFromImage(G->screen);

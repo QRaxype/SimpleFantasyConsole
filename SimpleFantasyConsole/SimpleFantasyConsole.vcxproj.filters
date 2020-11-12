@@ -38,9 +38,6 @@
     <ClInclude Include="Include.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
-    <ClInclude Include="Color.h">
-      <Filter>Файлы заголовков</Filter>
-    </ClInclude>
     <ClInclude Include="CApi.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
@@ -56,6 +53,12 @@
       <Filter>Файлы ресурсов</Filter>
     </Text>
     <Text Include="Info.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="Changelog.txt">
+      <Filter>Файлы ресурсов</Filter>
+    </Text>
+    <Text Include="CartFormat.txt">
       <Filter>Файлы ресурсов</Filter>
     </Text>
   </ItemGroup>

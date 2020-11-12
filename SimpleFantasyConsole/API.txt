@@ -7,4 +7,8 @@ key(k) : bool - return true if key is pressed
 
 0.2:
 pal(idx, [c]) : [c] - set color to palette or return color from palette
+clock() : s - return time after script launch like clock() from C
 
+_spr(obj, x, y, size, ac) - experemental, draw sprite on coordinates {x,y}, size - it's pixel count in sprite, ac - alpha color, obj - is table of pixels, 
+_test(f, [args...]) : t - experemental, call function f and return time his execution and function arguments
+sfx()

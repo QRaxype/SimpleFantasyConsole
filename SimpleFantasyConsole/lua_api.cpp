@@ -84,6 +84,32 @@ int luaapi_pal(lua_State *lua){
 	}
 	return 0;
 }
+int luaapi_sfx(lua_State *lua){
+	capi_sfx(0, 0);
+	return 0;
+}
+int luaapi_clock(lua_State *lua){
+	lua_pushnumber(lua, (float)capi_clock(0) / CLOCK_SEC);
+	return 1;
+}
+int luaapi__spr(lua_State *lua){
+	
+	return 0;
+}
+int luaapi__test(lua_State *lua){
+	if(lua_gettop(lua) >= 1){
+		if(lua_isfunction(lua, 1)){
+			ui32 ts, te;
+			ts = clock();
+			lua_call(lua, lua_gettop(lua) - 1, LUA_MULTRET);
+			te = clock();
+			lua_pushnumber(lua, (te - ts) / CLOCKS_PER_SEC);
+			lua_insert(lua, 1);
+			return lua_gettop(lua);
+		}
+	}
+	return 0;
+}
 
 void luaApiInit(){
 	Global *G = Global::G;

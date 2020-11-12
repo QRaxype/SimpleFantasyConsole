@@ -5,6 +5,7 @@ static Global *G = Global::G;
 
 void CApiInit(){
 	Global *G = Global::G;
+	G->clockoffset = clock();
 	luaApiInit();
 	if(G->error){
 		return;
@@ -83,3 +84,18 @@ ui32 capi_pal(byte _override, ui8 idx, ui32 color){
 	}
 	return 0;
 }
+void capi_sfx(byte _override, ui8 s){
+	Global *G = Global::G;
+	//G->sound_buffer.loadFromSamples()
+}
+ui32 capi_clock(byte _override){
+	Global *G = Global::G;
+	return clock() - G->clockoffset;
+}
+void capi__spr(byte _override){
+
+}
+void capi__test(byte _override){
+
+}
+

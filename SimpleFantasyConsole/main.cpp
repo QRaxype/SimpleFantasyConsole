@@ -40,7 +40,7 @@ void print_version(){
 			strcpy(state, "Release");
 			break;
 		default:
-			strcpy(state, "None");
+			strcpy(state, ".");
 			break;
 	}
 	/*printf("Version: (%u.%u.%u) [%u] {%s}\n\n", _version.ver.major, _version.ver.minor, _version.ver.macro,
